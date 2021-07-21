@@ -1,0 +1,33 @@
+method: lig
+exp_name: lig_object_level
+model:
+  encoder: null
+  encoder_kwargs: null
+  decoder: imnet
+  decoder_kwargs:
+    dim: 3
+    in_features: 32
+    out_features: 1
+    num_filters: 32
+  overlap: true # if false, must set indep_pt_loss==false
+  part_size: 0.24
+  res_per_part: 0
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+generation:
+  out_dir: .
+  points_batch: 20000
+  conservative: true
+  postprocess: true
+  indep_pt_loss: true
+  optimizer_kwargs:
+    latent_size: 32
+    alpha_lat: 0.01
+    num_optim_samples: 10000
+    init_std: 0.02
+    learning_rate: 0.001
+    optim_steps: 10000
+    print_every_n_steps: 1000
+

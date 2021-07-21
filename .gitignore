@@ -1,0 +1,7 @@
+.idea/*
+**/*.so
+**/__pycache__/git *
+**/__pycache__/*
+*.out
+out
+**/*.ply

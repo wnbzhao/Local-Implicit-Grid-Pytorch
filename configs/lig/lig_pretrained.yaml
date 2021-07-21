@@ -1,0 +1,3 @@
+inherit_from: configs/lig/lig_eval.yaml
+generation:
+  generation_dir: local_implicit_grid

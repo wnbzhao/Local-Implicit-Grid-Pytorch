@@ -1,0 +1,8 @@
+  
+torch>=1.6
+torchvision>=0.8.1
+tensorboardX
+tqdm
+argparse
+ipdb
+yaml
